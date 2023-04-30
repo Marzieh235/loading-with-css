@@ -1,0 +1,48 @@
+@font-face {
+  font-family: Vazir;
+  src: url(font/Vazirmatn-Medium.ttf);
+  font-style: normal;
+  font-weight: normal;
+}
+
+*,
+body {
+  font-family: Vazir;
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  direction: rtl;
+}
+a {
+  text-decoration: none;
+}
+ul,
+li,
+ol {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.loading {
+  width: 100px;
+  height: 100px;
+  border: 10px solid gainsboro;
+  border-radius: 50%;
+  margin: 200px;
+  border-top: 10px solid red;
+  animation: loading 2s linear infinite;
+  /* transition:linear ; */
+}
+
+@keyframes loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
